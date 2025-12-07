@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eymen Battal | Developer</title>
+  <meta name="description" content="Muhammet Eymen BATTAL — Bayburt Ortaokulu öğrencisi, yazılım tutkunu ve 3 dil bilen geliştirici.">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ RESMİ LDRS CDN (npm kurulum yerine — tarayıcıda doğrudan çalışır) -->
+  <script type="module">
+    // ✨ LDRS Ring loader'ı CDN ile import ediyoruz
+    import('https://cdn.skypack.dev/ldrs').then(ldrs => {
+      ldrs.register();
+    });
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ✅ L-RING LOADER (Resmi doküman: https://uiball.com/ldrs/) -->
+  <div id="loader">
+    <div class="loader-bg">
+      <!-- Bayburt Dağ Silüeti (SVG ile) -->
+      <svg viewBox="0 0 100 30" class="mountains" preserveAspectRatio="none">
+        <path d="M0,30 L0,22 L10,14 L20,18 L30,10 L40,16 L50,12 L60,20 L70,14 L80,24 L90,18 L100,26 L100,30 Z" fill="#1e293b"/>
+      </svg>
+      <!-- Güneş -->
+      <div class="sun"></div>
+    </div>
+    <div class="loader-content">
+      <!-- ✅ Resmi kullanım: <l-ring> -->
+      <l-ring
+        size="72"
+        stroke="6"
+        speed="1.4"
+        color="white"
+        bg-opacity="0"
+      ></l-ring>
+      <p>Eymen’in Dünyası Yükleniyor…</p>
+    </div>
+  </div>
+
+  <!-- ✅ GERİ KALAN CV İÇERİĞİ — TÜMÜ KORUNDU -->
+  <header class="hero">
+    <nav class="navbar">
+      <div class="nav-logo">EB</div>
+      <ul class="nav-links">
+        <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#projects">Projeler</a></li>
+        <li><a href="#skills">Yetenekler</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Tema değiştir">
+        <i class="fas fa-moon"></i>
+      </button>
+    </nav>
+
+    <div class="hero-content">
+      <h1 class="fade-in">Merhaba, ben <span>Eymen Battal</span>.</h1>
+      <h2 class="fade-in-delay">Bayburt’ta yaşayan, yazılıma tutkun bir geliştiriciyim.</h2>
+      <p class="fade-in-delay-2">
+        Şu anda <strong>güvenli mesajlaşma uygulaması</strong> geliştiriyorum. Uygulamalarımı kullanmanız benim için çok değerli!
+      </p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn primary">Projelerimi Gör</a>
+        <a href="#contact" class="btn outline">İletişime Geç</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span>Aşağı Kaydır</span>
+      <i class="fas fa-chevron-down bounce"></i>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title slide-up">Hakkımda</h2>
+      <div class="about-content">
+        <div class="about-text slide-up">
+          <p>
+            <strong>Muhammet Eymen BATTAL</strong> — Bayburt’ta yaşamaktayım ve Bayburt Ortaokulu’nda öğrenimimi sürdürüyorum.
+          </p>
+          <p>
+            Yazılıma karşı büyük bir <strong>tutku ve merak</strong> besliyorum. Kod yazmak, düşüncelerimi dijital dünyaya
+            dönüştürmek beni gerçekten heyecanlandırıyor.
+          </p>
+          <p>
+            Aynı zamanda <strong>3 dil</strong> konuşabiliyorum — iletişim kurmak, farklı kültürleri anlamak, teknolojiyi
+            herkese erişilebilir kılmak benim için çok değerli.
+          </p>
+          <blockquote class="quote">
+            “Yaptığım uygulamaları kullanmanız, benim için sadece bir geri bildirim değil — 
+            <strong>bir teşvik, bir onay ve çok büyük bir mutluluk kaynağı.</strong>”
+          </blockquote>
+          <div class="badges">
+            <span class="badge">🏔️ Bayburt</span>
+            <span class="badge">🗣️ 3 Dil</span>
+            <span class="badge">💻 Yazılım Tutkunu</span>
+          </div>
+        </div>
+        <div class="about-image slide-up">
+          <div class="avatar-pulse">
+            <div class="avatar">
+              EB
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title slide-up">Projeler</h2>
+      <p class="section-subtitle slide-up">Geliştirdiğim çözümler</p>
+
+      <div class="projects-grid">
+        <!-- Proje 1: Mesajlaşma Uygulaması -->
+        <div class="project-card glow-on-hover tilt">
+          <div class="project-badge live">🌐 Canlı</div>
+          <h3 class="project-title">Mesajlaşma Uygulaması</h3>
+          <p class="project-desc">
+            Gerçek zamanlı sohbet, uçtan uca şifreleme ve kullanıcı dostu arayüz ile geliştirilen
+            gizlilik odaklı bir iletişim çözümü.
+          </p>
+          <div class="tech-stack">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Socket.IO</span>
+            <span>Firebase</span>
+          </div>
+          <div class="project-links">
+            <a href="https://mesaj-2c1b.onrender.com/" target="_blank" class="btn sm primary">
+              <i class="fas fa-external-link-alt"></i> Uygulamayı Aç
+            </a>
+          </div>
+        </div>
+
+        <!-- Proje 2: CV Sitesi -->
+        <div class="project-card glow-on-hover tilt">
+          <div class="project-badge">✨ Bu Site!</div>
+          <h3 class="project-title">Animasyonlu CV Sitesi</h3>
+          <p class="project-desc">
+            Tamamen sıfırdan, animasyonlarla zenginleştirilmiş kişisel web sayfası.
+          </p>
+          <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ebattal5123-collab" target="_blank" class="btn sm">
+              <i class="fab fa-github"></i> Kodu Gör
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title slide-up">Yetenekler</h2>
+      <p class="section-subtitle slide-up">Kullandığım teknolojiler</p>
+
+      <div class="skills-grid">
+        <div class="skill-category slide-up">
+          <h3><i class="fas fa-code"></i> Diller</h3>
+          <ul>
+            <li>JavaScript (ES6+)</li>
+            <li>HTML5 / CSS3</li>
+            <li>Python (temel)</li>
+          </ul>
+        </div>
+        <div class="skill-category slide-up">
+          <h3><i class="fas fa-laptop-code"></i> Frameworks</h3>
+          <ul>
+            <li>React</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        <div class="skill-category slide-up">
+          <h3><i class="fas fa-database"></i> Veritabanı & API</h3>
+          <ul>
+            <li>Firebase</li>
+            <li>MongoDB</li>
+            <li>Socket.IO</li>
+          </ul>
+        </div>
+        <div class="skill-category slide-up">
+          <h3><i class="fas fa-tools"></i> Araçlar</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>VS Code</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title slide-up">İletişim</h2>
+      <p class="section-subtitle slide-up">Bana ulaşın veya mesajlaşma uygulamamı deneyin!</p>
+
+      <div class="contact-grid">
+        <div class="contact-info fade-in">
+          <h3>Doğrudan İletişim</h3>
+          <ul>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:ebattal5123@gmail.com">ebattal5123@gmail.com</a>
+            </li>
+            <li>
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/ebattal5123-collab" target="_blank">github.com/ebattal5123-collab</a>
+            </li>
+          </ul>
+
+          <div class="cta-box">
+            <h4>🚀 Mesajlaşma Uygulamamı Deneyin!</h4>
+            <p>Gerçek zamanlı sohbet deneyimi yaşayın.</p>
+            <a href="https://mesaj-2c1b.onrender.com/" target="_blank" class="btn primary">
+              <i class="fas fa-paper-plane"></i> Uygulamayı Aç
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form fade-in-delay" id="contactForm">
+          <input type="text" name="from_name" placeholder="İsminiz" required />
+          <input type="email" name="from_email" placeholder="Emailiniz" required />
+          <textarea name="message" placeholder="Mesajınız" rows="5" required></textarea>
+          <button type="submit" class="btn primary">
+            <i class="fas fa-paper-plane"></i> Gönder
+          </button>
+          <p id="form-status" class="form-feedback"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year">2025</span> <strong>Muhammet Eymen BATTAL</strong>.  
+        Tüm hakları saklıdır.  
+        <span class="heart">❤️</span> ile Bayburt’tan kodlandı.
+      </p>
+      <p class="small">
+        <i class="fas fa-code"></i> with HTML, CSS, JS
+      </p>
+    </div>
+  </footer>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
